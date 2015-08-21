@@ -7,23 +7,12 @@
     </div>
   </div>
 
-  <div class="panel">
+  <div ng-repeat="party in all_parties" class="panel">
     <div class="panel-heading text-left">
-      <h3>People's Action Party</h3>
+      <h3> {{party.title}} </h3>
     </div>
   </div>
 
-  <div class="panel">
-    <div class="panel-heading text-left">
-      <h3>Democratic Progressive Party</h3>
-    </div>
-  </div>
-
-   <div class="panel">
-    <div class="panel-heading text-left">
-      <h3>Singaporeans First</h3>
-    </div>
-  </div>
 
   <a href="#/votes" class="btn btn-default"> NEXT</a>
 </div>

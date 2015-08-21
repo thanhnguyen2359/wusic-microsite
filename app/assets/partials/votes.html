@@ -1,34 +1,18 @@
-<div class="wrapper" ng-controller="HomeController">
+<div class="wrapper" ng-controller="VoteController">
   <h1>Tanjong Paga</h1>
   <p>5 Man GRC</p>
 
   <table class="table">
     <tbody>
-      <tr>
+      <tr ng-repeat="party in all_parties">
         <td>
-          People's Action Party
+           {{ party.title }}
         </td>
         <td>
-          <input type="checkbox"/>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          Democratic Progressive Party
-        </td>
-        <td>
-          <input type="checkbox"/>
-        </td>
-      </tr>
-         <tr>
-        <td>
-         Singaporeans First
-        </td>
-        <td>
-          <input type="checkbox"/>
+          <input type="checkbox" ng-model="party.isVoted"/>
         </td>
       </tr>
     </tbody>
   </table>
-  <a href="#/finish" class="btn btn-default"> VOTES</a>
+  <a ng-click="makeTheVote()" class="btn btn-default"> VOTES</a>
 </div>
