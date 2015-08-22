@@ -11,6 +11,7 @@ angular.module('app', [
   'ngCookies',
   'ngResource',
   'ngRoute',
+  'chart.js',
   'mobile-angular-ui.core',
   'mobile-angular-ui.gestures',
   'mobile-angular-ui',

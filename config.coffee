@@ -7,6 +7,7 @@ exports.config =
         'javascripts/html5shiv.js': /^(vendor\/ie)/
       order:
         before: [
+          "vendor/js/chart.js"
         ]
 
     stylesheets:
